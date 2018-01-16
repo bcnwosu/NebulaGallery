@@ -1,0 +1,47 @@
+html {
+	height: 100%;
+	width: 100%;
+	
+}
+
+@font-face {
+	font-family: Anurati-Regular;
+	src: url("Anurati-Regular.otf");
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-image: url("space1.jpg");
+	background-size: cover;
+	background-position: fixed;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 80%;
+	height: 80%;
+	background-position: center;
+	text-align: center;
+	background-color: black;
+	padding: 10px 16px;
+	background-color: rgba(0, 0, 0, 0.7);
+	
+}
+.slides {
+	display: none;
+	animation: fadein 1s ease-in;
+}	
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#active {
+	display: block;
+}
